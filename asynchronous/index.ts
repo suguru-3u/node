@@ -11,13 +11,13 @@
 
 setTimeout(() => console.log("非同期処理"), 1000);
 
-const fs = require("fs");
+// import fs from "fs";
 
-fs.readdir(".", (err, files) => {
-  console.log("fs.readdir()実行結果");
-  console.log("err:", err);
-  console.log("files:", files);
-});
+// fs.readdir(".", (err, files) => {
+//   console.log("fs.readdir()実行結果");
+//   console.log("err:", err);
+//   console.log("files:", files);
+// });
 
 /**
  * 非同期処理のエラーハンドリング
@@ -28,15 +28,15 @@ fs.readdir(".", (err, files) => {
  * 正しくエラーハンドリングを行うのであれば、parseSuccesJSONのように記述するが、コールバック関数の引数errで適切に処理を行う必要がある。
  */
 
-function parseFailJSON(json, callback) {
-  try {
-    setTimeout(() => {
-      callback(JSON.parse(json));
-    }, 1000);
-  } catch (err) {
-    console.log("エラーをキャッチ", err);
-  }
-}
+// function parseFailJSON(json, callback) {
+//   try {
+//     setTimeout(() => {
+//       callback(JSON.parse(json));
+//     }, 1000);
+//   } catch (err) {
+//     console.log("エラーをキャッチ", err);
+//   }
+// }
 
 function parseSuccesJSON(json, callback) {
   setTimeout(() => {
