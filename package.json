@@ -1,0 +1,22 @@
+{
+  "name": "academy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suguru-3u/node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suguru-3u/node/issues"
+  },
+  "homepage": "https://github.com/suguru-3u/node#readme",
+  "devDependencies": {
+    "@types/node": "^20.5.7"
+  }
+}

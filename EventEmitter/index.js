@@ -1,3 +1,8 @@
+/**
+ * EventEmitter
+ * 1回の要求に対して、結果が複数回発生するような非同期処理の実装
+ */
+
 const EventEmitter = require("events");
 const eventEmitter = new EventEmitter();
 
